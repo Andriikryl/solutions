@@ -3,6 +3,10 @@
     padding-block: 31px;
 }
 
+.header__container{
+    max-width: 1780px;
+}
+
 .header__box{
     display: flex;
     justify-content: space-between;

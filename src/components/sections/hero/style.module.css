@@ -1,0 +1,208 @@
+.hero{
+    background-color: hsla(197, 47%, 24%, 1);
+    height: 100dvh;
+    position: relative;
+}
+
+
+
+
+.hero__info{
+    padding-block-start: 136px;
+}
+
+.hero__name{
+    display: block;
+    padding-block: 10px;
+    padding-inline: 15px;
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145.4%; 
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: #3C6373;
+    width: max-content;
+    margin-block-end: 20px;
+}
+
+.hero__style{
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 45px;
+}
+
+.hero__description{
+    display: block;
+    max-width: 466px;
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.9%; 
+    margin-block-end: 45px;
+}
+
+.button__group{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*========================= motion block============================= */
+
+.motion__block{
+    position:absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.marquee {
+    /* outline: 1px solid tomato; */
+    max-width: 700px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    /* -webkit-mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0));
+    mask-image: linear-gradient(to right, hsla(0deg, 0%, 0%, 0), hsl(0deg, 0%, 0%) 20%, hsl(0deg, 0%, 0%) 80%, hsla(0deg, 0%, 0%, 0)); */
+    z-index: 10;
+    transform: rotate(-14deg);
+}
+
+
+.second:nth-child(1){
+  order: 4;
+}
+.second:nth-child(2){
+  order: 3;
+}
+.second:nth-child(3){
+  order: 2;
+}
+.second:nth-child(4){
+  order: 1;
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    min-width: 100%;
+    animation: scroll-x 30s linear infinite;
+    margin-inline-end: 20px; 
+  }
+
+  .speed{
+    animation: scroll-x 10s linear infinite;
+  }
+
+  .marquee__item{
+    --size-lg: 200px;
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
+    line-height: 104.4%;
+    text-align: center;
+    -webkit-text-stroke-color: hsla(47, 100%, 50%, 1);
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    text-transform: uppercase;
+  }
+  
+  @keyframes scroll-x {
+    from {
+      transform: translateX (0);
+    }
+    to {
+      transform: translateX(calc(-100% - 21px));
+    }
+  }
+
+  .inner__box{
+    margin-block-end: 100px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .phone__box{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 1;
+  }
+
+  .phone__boxS{
+    position: absolute;
+    top: 0;
+    right: -80px;
+    z-index: 1;
+  }
+
+  .marquee__phone{
+    /* outline: 1px solid tomato; */
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh; */
+    overflow: hidden;
+    user-select: none;
+    z-index: 10;
+    transform: rotate(-14deg);
+  }
+
+  .marquee__contentPhone{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 301px;
+    min-width: 100%;
+    animation: scroll-y 25s linear infinite;
+    animation-duration: reverse;
+    margin-inline-end: 20px; 
+  }
+
+  .marquee__contentPhoneS{
+    animation: scroll-y 10s linear infinite;
+    animation-direction: reverse;
+  }
+
+  .marquee__itemPhone{
+    --size-lg: 200px;
+    font-family: 'Fairwall Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(40px, 5vw + 2rem, var(--size-lg) );
+    line-height: 104.4%;
+    text-align: center;
+    -webkit-text-stroke-color: hsla(47, 100%, 50%, 1);
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    text-transform: uppercase;
+  }
+
+  @keyframes scroll-y {
+    from {
+      transform: translateY (0);
+    }
+    to {
+      transform: translateY(calc(-100% - 21px));
+    }
+  }
+
+  .flex__group{
+    display: flex;
+    gap: 50px;
+  }
+
