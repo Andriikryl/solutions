@@ -3,6 +3,7 @@ import { Container } from "../container/Container";
 import style from "./style.module.css";
 import Logo from "public/logo/logo.svg";
 import Image from "next/image";
+import { Button } from "../button/Button";
 
 const data = [
   {
@@ -36,13 +37,15 @@ export default function Header() {
               {data.map((item) => {
                 return (
                   <li className={style.list__item} key={item.id}>
-                    <a className={style.item__link} href="#">{item.title}</a>
+                    <a className={style.item__link} href="#">
+                      {item.title}
+                    </a>
                   </li>
                 );
               })}
             </ul>
           </nav>
-          <button>Contact Us</button>
+          <Button>Contact Us</Button>
         </div>
       </Container>
     </header>

@@ -1,0 +1,21 @@
+.button{
+    padding-block: 20px;
+    padding-inline: 45px;
+    border-radius: 60px;
+    outline: 1px solid #C7C7C7;
+    border: none;
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+}
+
+.button:hover{
+    background: #C7A48B;
+    outline: none;
+}
