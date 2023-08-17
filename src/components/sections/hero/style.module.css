@@ -2,9 +2,8 @@
     background-color: hsla(197, 47%, 24%, 1);
     height: 100dvh;
     position: relative;
+    overflow: hidden;
 }
-
-
 
 
 .hero__info{
