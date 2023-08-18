@@ -4,6 +4,7 @@ import Offer from "@/components/sections/offer/Offer";
 import Who from "@/components/sections/who/Who";
 import Stack from "@/components/sections/stack/Stack";
 import Insigth from "@/components/sections/insigth/Insigth";
+import Qustions from "@/components/sections/qustions/Qustions";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Who />
       <Stack />
       <Insigth />
+      <Qustions />
     </>
   );
 }

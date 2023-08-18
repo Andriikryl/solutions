@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/colors": "latest",
+    "@radix-ui/react-accordion": "latest",
+    "@radix-ui/react-icons": "latest",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
