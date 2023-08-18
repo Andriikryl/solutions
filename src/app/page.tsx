@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Hero from "@/components/sections/hero/Hero";
+import About from "@/components/sections/about/About";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <About />
     </>
   );
 }
