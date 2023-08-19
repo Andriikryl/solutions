@@ -4,23 +4,28 @@ import style from "./style.module.css";
 import Logo from "public/logo/logo.svg";
 import Image from "next/image";
 import { Button } from "../button/Button";
+import Link from "next/link";
 
 const data = [
   {
     id: 1,
     title: "Services",
+    link: "/servisec",
   },
   {
     id: 2,
     title: "Products",
+    link: "/products",
   },
   {
     id: 3,
     title: "About Us",
+    link: "/about",
   },
   {
     id: 4,
     title: "Resources",
+    link: "/resources",
   },
 ];
 
@@ -29,17 +34,17 @@ export default function Header() {
     <header className={style.header}>
       <Container className={style.header__container}>
         <div className={style.header__box}>
-          <a href="#">
+          <Link href="/">
             <Image src={Logo} width={285} height={71} alt="ID LC Solutions" />
-          </a>
+          </Link>
           <nav className={style.nav}>
             <ul className={style.list}>
               {data.map((item) => {
                 return (
                   <li className={style.list__item} key={item.id}>
-                    <a className={style.item__link} href="#">
+                    <Link href={item.link} className={style.item__link}>
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
