@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
 import { Container } from "@/components/container/Container";
-import Image from "next/image";
+import ImageGroup from "@/components/imageGroup/ImageGroup";
 import ImageOne from "public/offerServ/machine-learning 3.png";
 import ImageTwo from "public/offerServ/mobile-development 2.png";
 import ImageThree from "public/offerServ/software 3.png";
@@ -43,20 +43,12 @@ export default function Offer() {
           </h2>
         </div>
         <div className={style.flex__group}>
-          <div className={style.Image__box}>
-            <div className={style.image__one}>
-              <Image src={ImageTwo} width={333} height={333} alt="image" />
-            </div>
-            <div className={style.image__two}>
-              <Image src={ImageOne} width={112} height={112} alt="image" />
-            </div>
-            <div className={style.image__three}>
-              <Image src={ImageThree} width={172} height={172} alt="image" />
-            </div>
-            <div className={style.image__four}>
-              <Image src={ImageFour} width={112} height={112} alt="image" />
-            </div>
-          </div>
+          <ImageGroup
+            ImageOne={ImageOne}
+            ImageTwo={ImageTwo}
+            ImageThree={ImageThree}
+            ImageFour={ImageFour}
+          />
           <div className={style.offer__info}>
             <h3 className={style.info__title}>web application development</h3>
             <p className={style.info__description}>
