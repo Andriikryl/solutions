@@ -1,0 +1,11 @@
+.soft{
+    border-radius: 40px;
+    background: #D7F0F5;
+    padding-block: 100px;
+    margin-block: 100px;
+}
+
+.flex__group{
+    display: flex;
+    justify-content: space-between;
+}
