@@ -1,0 +1,11 @@
+.testing{
+    padding-block: 100px;
+    margin-block: 100px;
+    border-radius: 40px;
+    background: hsl(197, 58%, 80%, .2);
+}
+
+.flex__group{
+    display: flex;
+    gap: 200px;
+}

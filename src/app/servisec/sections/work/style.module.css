@@ -1,0 +1,193 @@
+.work{
+    margin-block-end: 100px;
+}
+.flex__group{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    margin-block-end: 60px;
+}
+
+.title__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work__subTitle{
+    color: var(--text, #494B51);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145.4%; /* 20.356px */
+    text-transform: uppercase;
+}
+
+.work__title{
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.work__title span{
+    color: var(--dark-green, #217191);
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.work__list{
+    counter-reset: item;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    place-items: center; 
+     gap: 40px; 
+}
+
+
+.list__item{
+    max-width: 400px;
+    min-height: 386px;
+    padding-block: 20px;
+    padding-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background: var(--white, #FFF);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+    --top-gap: 25px;
+}
+
+.list__item::before{
+    counter-increment: item; 
+    content: 'step'" "counter(item) '';
+    display: block;
+    padding-block: 10px;
+    padding-inline: 15px;
+    background-color: black;
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145.4%; /* 20.356px */
+    text-transform: uppercase;
+    width: max-content;
+    border-radius: 10px;
+}
+
+.list__item:nth-child(1)::before{
+    background: rgba(193, 206, 208, 0.48);
+}
+.list__item:nth-child(2)::before{
+    background: rgba(192, 192, 237, 0.60);
+}
+.list__item:nth-child(3)::before{
+    background: rgba(169, 215, 241, 0.60);
+}
+.list__item:nth-child(4)::before{
+    background: rgba(166, 189, 233, 0.60);
+}
+.list__item:nth-child(5)::before{
+    background: rgba(167, 236, 251, 0.60);
+}
+
+.list__item:nth-child(3){
+    position: relative;
+}
+
+.list__item:nth-child(3)::after{
+    content: "";
+    width: 34px;
+    height: 438px;
+    border-top: 1px solid #B6B6B6;
+    border-left: 1px solid #B6B6B6;
+    border-bottom: 1px solid #B6B6B6;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    transform: rotate(180deg);
+    position: absolute;
+    right: -34px;
+    top: 20px;
+}
+
+.list__item:nth-child(5){
+    position: relative;
+}
+:is(.list__item:nth-child(1), .list__item:nth-child(2), .list__item:nth-child(4)){
+    position: relative;
+}
+
+
+.list__item:nth-child(1)::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #B6B6B6;
+    position: absolute;
+    right: -40px;
+    top: var(--top-gap);
+}
+.list__item:nth-child(2)::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #B6B6B6;
+    position: absolute;
+    right: -40px;
+    top: var(--top-gap);
+}
+.list__item:nth-child(4)::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #B6B6B6;
+    position: absolute;
+    right: -40px;
+    top: var(--top-gap);
+}
+
+.list__item:nth-child(5)::after{
+    content: "";
+    display: block;
+    width: 427px;
+    height: 1px;
+    background-color: #B6B6B6;
+    position: absolute;
+    right: -427px;
+    top: 31px;
+}
+
+.item__title{
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.9%; 
+}
+
+.item__description{
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.9%;
+}
