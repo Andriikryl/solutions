@@ -5,6 +5,9 @@ import Machine from "./sections/machine/Machine";
 import Soft from "./sections/soft/Soft";
 import Testing from "./sections/testing/Testing";
 import Work from "./sections/work/Work";
+import Help from "./sections/help/Help";
+import Stack from "@/components/sections/stack/Stack";
+import Support from "@/components/support/Support";
 
 export default function Servisec() {
   return (
@@ -15,6 +18,9 @@ export default function Servisec() {
       <Soft />
       <Testing />
       <Work />
+      <Help />
+      <Stack />
+      <Support />
     </>
   );
 }
