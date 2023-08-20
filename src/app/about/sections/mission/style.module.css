@@ -1,0 +1,35 @@
+.mission{
+    border-radius: 40px;
+    background: #D7F0F5;
+    padding-block: 100px;
+    margin-block-end: 100px;
+}
+.mission__title{
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    margin-block-end: 37px;
+}
+
+.flex__group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.mission__description{
+    max-width: 400px;
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166.9%; /* 30.042px */
+}
