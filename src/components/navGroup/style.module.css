@@ -1,0 +1,41 @@
+
+.hero__links{
+    --link-space: 15px;
+    display: flex;
+    align-items: center;
+    gap: var(--link-space);
+    margin-block-end: 115px;
+}
+
+.hero__links a:nth-child(1){
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+.hero__links a:nth-child(2){
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--link-space);
+}
+
+.hero__links a:nth-child(2)::before{
+    content: "";
+    display: block;
+    background-image: url("/icons/ep_arrow-down-bold.svg");
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

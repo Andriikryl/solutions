@@ -1,0 +1,76 @@
+.stand{
+    padding-block: 100px;
+}
+.stand__prev{
+    border-radius: 40px;
+    overflow: hidden;
+    width: 449px;
+    height: 633px;
+    background: linear-gradient(180deg, #3a86ff    50%,#ffd60a 50%);
+    display: flex;
+    justify-content:center;
+    align-items:end;
+}
+
+.stand__btn{
+    padding-block: 20px;
+    padding-inline: 45px;
+    color: #204959;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 60px;
+    background: var(--white, #FFF);
+    border: none;
+    cursor: pointer;
+    margin-block-end: 26px;
+}
+
+.stand__text{
+    max-width: 510px;
+}
+
+.stend__title{
+    color: var(--text, #494B51);
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 400px;
+    margin-block-end: 100px;
+}
+
+.stend__description{
+    color: var(--text, #494B51);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.stend__description:nth-child(2){
+    margin-block-end: 25px;
+}
+
+.stend__description:nth-child(3){
+    margin-block-end: 30px;
+}
+.glory__to__Ukraine{
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.stand__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
