@@ -3,6 +3,8 @@ import HeroAbout from "./sections/hero/HeroAbout";
 import Welcome from "./sections/welcome/Welcome";
 import Ideal from "./sections/ideal/Ideal";
 import Mission from "./sections/mission/Mission";
+import Who from "@/components/sections/who/Who";
+import Values from "./sections/values/Values";
 
 export default function About() {
   return (
@@ -11,6 +13,8 @@ export default function About() {
       <Welcome />
       <Ideal />
       <Mission />
+      <Who />
+      <Values />
     </>
   );
 }

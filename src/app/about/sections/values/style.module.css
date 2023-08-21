@@ -1,0 +1,116 @@
+.values{
+    padding-block: 100px;
+    margin-block-end: 100px;
+}
+
+.values__title{
+    color: var(--title, #131414);
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+    margin-block-end: 60px;
+}
+
+.values__list{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list__item{
+    list-style: none;
+    padding-block: 20px;
+    padding-inline: 40px 140px;
+    max-width: 660px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+}
+
+.list__item:nth-child(1){
+    border-left: 10px solid #B0DAEA;
+    background: #E7ECF6;
+}
+
+.item__title{
+    color: var(--text, #494B51);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-block-end: 10px;
+}
+
+.item__description{
+    color: var(--text, #494B51);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+}
+
+.flex__group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image__box{
+    position: relative;
+    max-width: 500px;
+    margin-block-start: 100px;
+}
+
+.image__one{
+    padding-block: 30px;
+    padding-inline: 48px;
+    border-radius: 45.882px;
+    background: #E7ECF6;
+    box-shadow: 20.647058486938477px 22.941177368164062px 57.352943420410156px 0px rgba(189, 230, 255, 0.20);
+    width: max-content;
+    position: absolute;
+    transform: translate(50%, 50%);
+}
+
+.image__two{
+    padding-block: 31px;
+    padding-inline: 43px;
+    border-radius: 45px;
+    background-color: hsla(190, 60%, 90%, 1);
+    width: max-content;
+    position: absolute;
+    bottom: 150px;
+    left: 250px;
+}
+
+.image__three{
+    padding-block: 27px;
+    width: max-content;
+    padding-inline: 37px;
+    border-radius: 45px;
+    border-radius: 26.275px;
+    background: #B0DAEA;
+    box-shadow: 11.823529243469238px 13.13725471496582px 32.843135833740234px 0px rgba(189, 230, 255, 0.20);
+    position: absolute;
+    left: 340px;
+    top: -40px;
+}
+
+.image__four{
+    padding-block: 27px;
+    padding-inline: 37px;
+    border-radius: 45px;
+    width: max-content;
+    background-color: #B0C7EA;
+    position: absolute;
+    top: 300px;
+    left: -40px;
+}
