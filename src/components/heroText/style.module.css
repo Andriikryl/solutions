@@ -20,7 +20,7 @@
 .hero__title{
     color: var(--white, #FFF);
     font-family: Montserrat;
-    font-size: 60px;
+    font-size: clamp(25px, 5vw + 1rem, 60px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;

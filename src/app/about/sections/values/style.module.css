@@ -13,6 +13,8 @@
     text-transform: capitalize;
     text-align: center;
     margin-block-end: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 .values__list{
@@ -67,6 +69,7 @@
     position: relative;
     max-width: 500px;
     margin-block-start: 100px;
+    z-index: -1;
 }
 
 .image__one{
@@ -113,4 +116,28 @@
     position: absolute;
     top: 300px;
     left: -40px;
+}
+
+@media (max-width:540px) {
+    .image__box{
+        z-index: -1;
+        max-width: 300px;
+    }
+    .image__two{
+        left: 50px;
+    }
+    .image__three{
+        left: 20px;
+        top: -100px;
+    }
+    .image__one{
+        transform: translate(24%, 129%);
+    }
+    .image__four{
+        top: 500px;
+        left: 65px;
+    }
+    .list__item{
+        padding-inline: 20px 20px;
+    }
 }
