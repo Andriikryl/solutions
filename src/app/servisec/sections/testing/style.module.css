@@ -7,5 +7,14 @@
 
 .flex__group{
     display: flex;
-    gap: 200px;
+    gap: clamp(30px, 5vw + 1rem, 200px);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 770px) {
+    .flex__group{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

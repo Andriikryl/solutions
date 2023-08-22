@@ -8,4 +8,13 @@
 .flex__group{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 770px) {
+    .flex__group{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

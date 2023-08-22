@@ -70,3 +70,11 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (max-width: 770px) {
+    .flex__group{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

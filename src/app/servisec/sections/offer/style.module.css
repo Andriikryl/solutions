@@ -4,6 +4,7 @@
 .offer__box{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -95,8 +96,17 @@
 
 .flex__group{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-block-end: 100px;
+}
+
+@media (max-width: 770px) {
+    .flex__group{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .text__box{

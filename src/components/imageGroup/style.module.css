@@ -20,3 +20,14 @@
     left: -90px;
     bottom: 0;
 }
+
+@media (max-width: 770px) {
+    .Image__box{
+        max-width: 300px;
+    }
+    .image__four{
+        position: absolute;
+        right: -20px;
+        top: 130px;
+    }
+}

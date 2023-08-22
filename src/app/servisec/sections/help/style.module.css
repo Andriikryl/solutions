@@ -8,6 +8,8 @@
 .flex__group{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
     align-items: center;
 }
 
@@ -45,4 +47,23 @@
     font-weight: 400;
     line-height: 166.9%; 
     max-width: 840px;
+}
+
+@media (max-width:1000px) {
+    .flex__group{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .flex__group div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .help__subTitle{
+        margin-inline: auto;
+    }
 }

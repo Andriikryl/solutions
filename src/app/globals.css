@@ -1,19 +1,9 @@
 
-:root {
-  --space: 150px;
-	--size: 120;
-	--coefficient: 1px;
-	--timeline: 2.6s;
-	--delay: 0.65s;
-  --rotation-y: -24;
-  --rotation-x: 28;
-  --color-one: #3a0ca3;
-  --color-two: #4361ee;
-  --color-three: #4cc9f0;
-}
+
 
 *, *::before, *::after {
   box-sizing: border-box;
+  transform-style: preserve-3d;
 }
 * {
   margin: 0;
