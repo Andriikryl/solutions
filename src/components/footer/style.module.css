@@ -9,13 +9,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     margin-block-end: 60px;
 }
 
 .list__box{
     display: flex;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: clamp(25px, 5vw + 1rem, 100px);
 }
 
 .flex__group{

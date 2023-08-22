@@ -10,7 +10,7 @@ export default function Hero() {
         <div className={style.hero__box}>
           <div className={style.hero__info}>
             <span className={style.hero__name}>ID Al. Solutions</span>
-            <h1 className={style.hero__style}>
+            <h1 className={style.hero__title}>
               Synergy of Expertise <br />
               Integrity in Partnership <br />
               Ideal Solutions - as a Standard

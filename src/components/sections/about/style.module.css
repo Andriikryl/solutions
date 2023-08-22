@@ -22,6 +22,7 @@
     margin-block-end: 80px;
 }
 
+
 .about__title{
     color: var(--title, #131414);
     font-family: Montserrat;
@@ -77,4 +78,24 @@
     font-weight: 400;
     line-height: 166.9%;
     max-width: 329px;
+}
+
+@media (max-width: 640px) {
+    .about__descriptio{
+        text-align: center;
+    }
+    .flex__group{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .list__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

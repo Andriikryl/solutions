@@ -48,3 +48,12 @@
     border: none;
     cursor: pointer;
 }
+
+@media (max-width: 730px) {
+    .support__container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+}

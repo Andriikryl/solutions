@@ -5,8 +5,17 @@
 .flex__group{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: end;
     margin-block-end: 75px;
+    gap: 25px;
+}
+
+@media (max-width: 500px) {
+    .flex__group{
+        justify-content: center;
+        text-align: center;
+    }
 }
 .insigth__subTitle{
     display: block;

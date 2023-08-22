@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Container } from "../container/Container";
 import style from "./style.module.css";
 import Logo from "public/logo/logo.svg";
 import Image from "next/image";
 import { Button } from "../button/Button";
 import Link from "next/link";
+import BurgerButton from "./BurgerButton";
 
 const data = [
   {
@@ -30,6 +32,16 @@ const data = [
 ];
 
 export default function Header() {
+  const [activeState, setActiveState] = useState(false);
+
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) html.classList.toggle("dis-scroll", activeState);
+  }, [activeState]);
+
+  const handleClick = () => {
+    setActiveState((prev) => !prev);
+  };
   return (
     <header className={style.header}>
       <Container className={style.header__container}>
@@ -37,7 +49,9 @@ export default function Header() {
           <Link href="/">
             <Image src={Logo} width={285} height={71} alt="ID LC Solutions" />
           </Link>
-          <nav className={style.nav}>
+          <nav
+            className={`${style.nav} ${activeState ? style.menu_active : ""}`}
+          >
             <ul className={style.list}>
               {data.map((item) => {
                 return (
@@ -50,7 +64,8 @@ export default function Header() {
               })}
             </ul>
           </nav>
-          <Button>Contact Us</Button>
+          <Button className={style.header__btn}>Contact Us</Button>
+          <BurgerButton onClick={handleClick} activeState={activeState} />
         </div>
       </Container>
     </header>

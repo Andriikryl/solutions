@@ -8,6 +8,7 @@
     align-items:end;
     flex-wrap: wrap;
     margin-block-end: 100px;
+    gap: 30px;
 }
 
 .stack__subTitle{
@@ -25,7 +26,7 @@
 .stack__title{
     color: var(--title, #131414);
     font-family: Montserrat;
-    font-size: 35px;
+    font-size: clamp(20px, 5vw + 1rem, 35px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -90,5 +91,14 @@
     }
     to {
       transform: translateX(calc(-100% - 21px));
+    }
+  }
+
+  @media (max-width: 700px) {
+    .flex__group{
+      text-align: center;
+    } 
+    .flex__group div{
+      margin-inline: auto;
     }
   }

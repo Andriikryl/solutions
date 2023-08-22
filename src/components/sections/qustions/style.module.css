@@ -33,14 +33,10 @@
 
 
 .AccordionRoot {
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 50ch), 1fr));
     place-items: center;
-    gap: 10px;  */
-    columns: 2;
-    column-gap: 40px;
+    gap: 10px; 
 }
 
 .AccordionItem {
