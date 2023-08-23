@@ -34,7 +34,7 @@ export default function Footer() {
       <Container>
         <div className={style.footer__top}>
           <div className={style.flex__group}>
-            <Image src={Logo} width={149} height={37} alt="logo" />
+            <Image src={Logo} width={37} height={37} alt="logo" />
             <p className={style.footer__description}>
               ID Al. Solutions is a software development team that creates
               unique IT startups and implements top-notch outsource projects

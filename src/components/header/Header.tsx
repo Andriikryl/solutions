@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "../button/Button";
 import Link from "next/link";
 import BurgerButton from "./BurgerButton";
+import { TextEncrypted } from "../TextEncrypted/TextEncrypted";
 
 const data = [
   {
@@ -46,8 +47,9 @@ export default function Header() {
     <header className={style.header}>
       <Container className={style.header__container}>
         <div className={style.header__box}>
-          <Link href="/">
-            <Image src={Logo} width={285} height={71} alt="ID LC Solutions" />
+          <Link href="/" className={style.header__logo}>
+            <Image src={Logo} width={71} height={71} alt="ID LC Solutions" />
+            <TextEncrypted text="ID LC Solutions" />
           </Link>
           <nav
             className={`${style.nav} ${activeState ? style.menu_active : ""}`}

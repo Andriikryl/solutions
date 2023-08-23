@@ -171,3 +171,16 @@
     -o-transform: none;
   }
   
+
+  .header__logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.714px; /* 165.079% */
+    text-decoration: none;
+  }
