@@ -1,0 +1,15 @@
+.hero{
+    border-radius: 0px 0px 40px 40px;
+    background: #204959;
+    padding-block: 100px;
+}
+
+.hero__title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: clamp(20px, 5vw + 1rem, 60px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 1000px;
+}
